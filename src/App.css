@@ -1,38 +1,200 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+*{
+    margin: 0;
   }
+  
+  div.ani {
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+  }
+  @keyframes example {
+    0%   { left:0px; top:0px;}
+    25%  { left:35px; top:0px;}
+  }
+
+  div.App{
+    display: block;
+    flex-direction: column;
+  }
+  /* div.namenbtn{
+    height: 60rem;
+    width: 100rem;
+  } */
+
+
+h1{
+    text-align: center;
+  
+}
+span.NAME{
+    color:#00cdac
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+div.namenbtn{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20rem;
+}
+
+.myfont {
+    margin-top: 5rem;
+    font-family: 'Allerta';font-size: 6rem; font-weight: bold;
+}
+
+div.container{
+  margin-top: 3rem;
+  margin-left: 2rem;
+}
+
+/* mybutton */
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+
+.btn {
+  width: 250px;
+  height: 60px;
+  cursor: pointer;
+  background: transparent;
+  border: 1px solid #91C9FF;
+  outline: none;
+  transition: 1s ease-in-out;
+}
+
+svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  fill: none;
+  stroke: #fff;
+  stroke-dasharray: 150 480;
+  stroke-dashoffset: 150;
+  transition: 1s ease-in-out;
+}
+
+.btn:hover {
+  transition: 1s ease-in-out;
+  background: #00cdac;
+}
+
+.btn:hover svg {
+  stroke-dashoffset: -480;
+}
+
+.btn span {
+  color: black;
+  font-size: 30px;
+  font-weight: 700;
+}
+/* mybutton */
+
+
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #02aab0;
+}
+
+.mydisbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 90px;
+  align-content: center;
+}
+
+
+.my_des{
+  text-align: center;
+  margin: 5px;
+  font-size: 47px;
+  padding: 20px;
+}
+
+div#myCarousel{
+  height: 250px;
+  width: 500px;
+}
+
+.resumecontainer{
+  display: flex;
+  align-items: center;
+  margin-left: 15rem;
+  color: white;
+  padding: 25px;
+}
+
+.Myprojects{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding: 30px;
+}
+
+.myfont.prodes{
+  font-size: 35px;
+  color: rgb(87, 87, 87);
+}
+.myfont.Projectname{
+  font-size: 45px;
+}
+
+.contact{
+  background-color: #02aab0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
+  padding: 10px;
+}
+.email{
+  font-size: 30px;
+}
+
+.contactme{
+  font-size: 30px;
+  align-content: center;
+}
+.mycontact{
+  align-content: center;
+  margin: 50px;
+}
+
+
+.licence{
+  padding: 20px;
+  margin: 50px;
+  font-size: 20px;
+}
+
+.myfooter{
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 350px;
+  background-color: #333;
+
+}
+
+.abc{
+  margin: 10px;
+}
+
+
+.contact button{
+  margin: 40px;
+}
+
+.resumecontainer{
+  margin-bottom: 30px;
+}
+
+a{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.center button a{
+  color: black;
 }
