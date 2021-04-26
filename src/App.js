@@ -79,7 +79,7 @@ function App() {
         </div>
       </div>
       <div class="resumecontainer">
-          <button class="btn" >
+          <button class="btn" id = "mybtn" >
             <span style = {{color:"white"}}><a href="https://bit.ly/3tO1gJp" color="white" > View Resume </a>   </span>
           </button>
         </div>
